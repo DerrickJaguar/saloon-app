@@ -586,7 +586,7 @@ function HomePage({ onLogout }: { onLogout: () => void }) {
                 <div className="acw-left">
                   <div className="acw-label"><Ico.calendar c="rgba(255,255,255,0.75)" s={15}/> Today · Morning</div>
                   <div className="acw-time">10:00 AM</div>
-                  <div className="acw-salon">At The Lotus Hair Salon</div>
+                  <div className="acw-salon">At Kamukuzi Beauty Lounge</div>
                   <div className="acw-tags">
                     <span>✂ Haircut</span><span>💇 Classic Shave</span>
                   </div>
