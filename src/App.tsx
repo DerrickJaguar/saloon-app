@@ -133,10 +133,10 @@ const Ico = {
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 
 const SALONS = [
-  { name: 'Lotus Salon', addr: '4/2 Holbrooke Rd, Pasadena, CA', dist: '6 km', rating: '5.0', reviews: 1191, color: '#8B9678' },
-  { name: 'Enticing Salon', addr: '3517 Newcent St, Spring, TX', dist: '12 km', rating: '5.0', reviews: 843, color: '#7A8B68' },
-  { name: 'Stylette Salon', addr: '3517 Newcent St, Saint Cloud, MN', dist: '4.5 km', rating: '4.8', reviews: 624, color: '#9A8068' },
-  { name: 'Serenity Salon', addr: '637 W. Line, Grand Rapids, MI', dist: '7.5 km', rating: '5.0', reviews: 2047, color: '#6B7A5C' },
+  { name: 'Kamukuzi Beauty Lounge', addr: 'Kamukuzi Hill Rd, Mbarara City', dist: '1.2 km', rating: '5.0', reviews: 1191, color: '#8B9678' },
+  { name: 'Ruti Hair Studio', addr: 'Ruti Road, Kakoba Division, Mbarara', dist: '2.8 km', rating: '5.0', reviews: 843, color: '#7A8B68' },
+  { name: 'Nyamitanga Style House', addr: 'Nyamitanga Road, Mbarara City', dist: '3.5 km', rating: '4.8', reviews: 624, color: '#9A8068' },
+  { name: 'Biharwe Glow Salon', addr: 'Biharwe Trading Centre, Mbarara', dist: '5.2 km', rating: '5.0', reviews: 2047, color: '#6B7A5C' },
 ]
 const SERVICES = [
   { emoji: '✂️', label: 'Haircut' }, { emoji: '💄', label: 'Make Up' },
@@ -144,15 +144,15 @@ const SERVICES = [
   { emoji: '🎨', label: 'Coloring' }, { emoji: '🧴', label: 'Skin Care' },
 ]
 const SPECS = [
-  { name: 'Doris', role: 'Stylist', salon: 'Lotus Salon', color: '#8B9678' },
-  { name: 'Joanne', role: 'Colorist', salon: 'Lotus Salon', color: '#7A6858' },
-  { name: 'Angela', role: 'Makeup', salon: 'Enticing', color: '#6B7A5C' },
-  { name: 'Sarah', role: 'Barber', salon: 'Stylette', color: '#9A8068' },
+  { name: 'Nalwoga', role: 'Stylist', salon: 'Kamukuzi Beauty', color: '#8B9678' },
+  { name: 'Kemirembe', role: 'Colorist', salon: 'Kamukuzi Beauty', color: '#7A6858' },
+  { name: 'Tumusiime', role: 'Makeup', salon: 'Ruti Studio', color: '#6B7A5C' },
+  { name: 'Patrick', role: 'Barber', salon: 'Nyamitanga Style', color: '#9A8068' },
 ]
 const REVIEWS = [
-  { name: 'Jennifer M.', text: 'Absolutely amazing experience! Doris did an incredible job with my highlights. Booking was seamless — will definitely be back.', rating: 5, date: 'Oct 14, 2024', initials: 'JM', color: '#8B9678' },
-  { name: 'Michael R.', text: 'Found the perfect barber near me through Hair Salon. Clean shop, great atmosphere and the haircut was exactly what I wanted.', rating: 5, date: 'Oct 9, 2024', initials: 'MR', color: '#7A6858' },
-  { name: 'Priya K.', text: 'The booking system is so intuitive. I got a same-day appointment at Serenity Salon and the results were outstanding.', rating: 5, date: 'Sep 30, 2024', initials: 'PK', color: '#6B7A5C' },
+  { name: 'Grace T.', text: 'Absolutely amazing experience! Nalwoga did an incredible job with my highlights. Booking was seamless — will definitely be back.', rating: 5, date: 'Oct 14, 2024', initials: 'GT', color: '#8B9678' },
+  { name: 'David K.', text: 'Found the perfect barber in Mbarara through Hair Salon. Clean shop, great atmosphere and the haircut was exactly what I wanted.', rating: 5, date: 'Oct 9, 2024', initials: 'DK', color: '#7A6858' },
+  { name: 'Faith N.', text: 'The booking system is so intuitive. I got a same-day appointment at Biharwe Glow Salon and the results were outstanding.', rating: 5, date: 'Sep 30, 2024', initials: 'FN', color: '#6B7A5C' },
 ]
 
 // ─── SPLASH ───────────────────────────────────────────────────────────────────
@@ -220,7 +220,7 @@ function LandingPage({ onLogin, onRegister }: { onLogin: () => void; onRegister:
         <div className="hero-bg-deco" />
         <div className="container hero-grid">
           <div className="hero-left">
-            <div className="hero-badge">✓ Trusted by 50,000+ clients worldwide</div>
+            <div className="hero-badge">✓ Trusted by clients across Uganda</div>
             <h1 className="hero-h1">Find Your Perfect<br /><em>Salon Experience</em></h1>
             <p className="hero-desc">Discover and book top-rated salons and stylists near you — instantly and effortlessly. Your next great look is just one click away.</p>
             <div className="hero-stats">
@@ -243,7 +243,7 @@ function LandingPage({ onLogin, onRegister }: { onLogin: () => void; onRegister:
                   <span className="hv-badge-confirmed">Confirmed ✓</span>
                 </div>
                 <p className="hv-ac-time">10:00 AM</p>
-                <p className="hv-ac-salon">At The Lotus Hair Salon</p>
+                <p className="hv-ac-salon">At Kamukuzi Beauty Lounge</p>
                 <div className="hv-ac-foot">
                   <div className="hv-ac-avatars">
                     {['#8B9678','#7A6858','#6B7A5C'].map(c => <div key={c} className="hv-tiny-av" style={{ background: c }} />)}
@@ -254,8 +254,8 @@ function LandingPage({ onLogin, onRegister }: { onLogin: () => void; onRegister:
               <div className="hv-salon-card">
                 <div className="hv-sc-img" style={{ background: 'linear-gradient(135deg,#8B9678,#6B7A5C)' }}><span>✂</span></div>
                 <div className="hv-sc-info">
-                  <p className="hv-sc-name">Lotus Salon</p>
-                  <p className="hv-sc-addr"><Ico.pin s={11} c="#9B8C7A" /> Pasadena, CA</p>
+                  <p className="hv-sc-name">Kamukuzi Beauty Lounge</p>
+                  <p className="hv-sc-addr"><Ico.pin s={11} c="#9B8C7A" /> Mbarara City, Uganda</p>
                   <div className="hv-sc-rating"><Ico.star s={12} /> <strong>5.0</strong> <span>(1,191)</span></div>
                 </div>
                 <button className="hv-sc-book">Book</button>
@@ -377,7 +377,7 @@ function LandingPage({ onLogin, onRegister }: { onLogin: () => void; onRegister:
         <div className="container cta-inner">
           <div>
             <h2 className="cta-h2">Ready for Your Next Great Look?</h2>
-            <p className="cta-sub">Join 50,000+ clients who book smarter with Hair Salon.</p>
+            <p className="cta-sub">Join thousands of clients across Mbarara who book smarter with Hair Salon.</p>
           </div>
           <div className="cta-actions">
             <button className="cta-btn-white" onClick={onRegister}>Get Started — Free</button>
@@ -462,8 +462,8 @@ function RegisterPage({ onRegister, onLogin, onBack }: { onRegister: () => void;
         <p className="auth-sub">Join thousands of happy salon clients</p>
         <div className="auth-form">
           <div className="field-2col">
-            <div className="field"><label>Full Name</label><div className="field-box"><Ico.user c="#9B8C7A" s={18}/><input type="text" placeholder="Anissa Houk" value={name} onChange={e=>setName(e.target.value)}/></div></div>
-            <div className="field"><label>Phone Number</label><div className="field-box"><Ico.phone /><input type="tel" placeholder="+1 (555) 000-0000" value={phone} onChange={e=>setPhone(e.target.value)}/></div></div>
+            <div className="field"><label>Full Name</label><div className="field-box"><Ico.user c="#9B8C7A" s={18}/><input type="text" placeholder="Grace Tumusiime" value={name} onChange={e=>setName(e.target.value)}/></div></div>
+            <div className="field"><label>Phone Number</label><div className="field-box"><Ico.phone /><input type="tel" placeholder="+256 700 000 000" value={phone} onChange={e=>setPhone(e.target.value)}/></div></div>
           </div>
           <div className="field"><label>Email Address</label><div className="field-box"><Ico.email /><input type="email" placeholder="your@email.com" value={email} onChange={e=>setEmail(e.target.value)}/></div></div>
           <div className="field-2col">
@@ -522,8 +522,8 @@ function HomePage({ onLogout }: { onLogout: () => void }) {
           ))}
         </nav>
         <div className="ds-user" onClick={onLogout} title="Sign out">
-          <div className="ds-av">AH</div>
-          <div className="ds-user-info"><p className="ds-uname">Anissa Houk</p><p className="ds-uemail">anissa@email.com</p></div>
+          <div className="ds-av">GT</div>
+          <div className="ds-user-info"><p className="ds-uname">Grace Tumusiime</p><p className="ds-uemail">grace@email.com</p></div>
           <Ico.logout c="#9B8C7A" />
         </div>
       </aside>
@@ -542,7 +542,7 @@ function HomePage({ onLogout }: { onLogout: () => void }) {
               <Ico.bell c="#2A1F14" />
               <span className="dt-notif" />
             </button>
-            <div className="dt-avatar">AH</div>
+            <div className="dt-avatar">GT</div>
           </div>
         </header>
 
@@ -551,8 +551,8 @@ function HomePage({ onLogout }: { onLogout: () => void }) {
           {/* Greeting */}
           <div className="dash-greeting">
             <div>
-              <h2 className="dg-name">Good morning, Anissa 👋</h2>
-              <p className="dg-sub"><Ico.pin s={13} c="#9B8C7A" /> 4/2 Holbrooke Road, Pasadena, CA</p>
+              <h2 className="dg-name">Good morning, Grace 👋</h2>
+              <p className="dg-sub"><Ico.pin s={13} c="#9B8C7A" /> Mbaguta Street, Mbarara City, Uganda</p>
             </div>
             <button className="btn-brown" onClick={() => setTab('appointments')}>Book Appointment</button>
           </div>
