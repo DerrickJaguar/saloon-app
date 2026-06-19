@@ -326,7 +326,7 @@ function LandingPage({ onLogin, onRegister }: { onLogin: () => void; onRegister:
             <p className="section-sub">Handpicked salons with the highest ratings and reviews from real clients.</p>
           </div>
           <div className="salons-grid">
-            {SALONS.map((s, i) => (
+            {SALONS.map((s) => (
               <div key={s.name} className="salon-feature-card">
                 <div className="sfc-img" style={{ background: `linear-gradient(145deg, ${s.color}, ${s.color}99)` }}>
                   <span className="sfc-ico">✂</span>
@@ -616,7 +616,7 @@ function HomePage({ onLogout }: { onLogout: () => void }) {
                 <button className="view-all-link">View All</button>
               </div>
               <div className="salon-web-list">
-                {SALONS.map((s, i) => (
+                {SALONS.map((s) => (
                   <div key={s.name} className="salon-web-row">
                     <div className="swr-img" style={{ background: `linear-gradient(135deg, ${s.color}, ${s.color}99)` }}>✂</div>
                     <div className="swr-info">
