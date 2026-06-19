@@ -1,4 +1,4 @@
-const CACHE = 'hair-salon-v1'
+const CACHE = 'hair-salon-v2'
 const SHELL = ['/', '/index.html', '/manifest.json']
 
 self.addEventListener('install', e => {
