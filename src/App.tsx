@@ -150,9 +150,9 @@ const SPECS = [
   { name: 'Patrick', role: 'Barber', salon: 'Nyamitanga Style', color: '#9A8068' },
 ]
 const REVIEWS = [
-  { name: 'Grace T.', text: 'Absolutely amazing experience! Nalwoga did an incredible job with my highlights. Booking was seamless — will definitely be back.', rating: 5, date: 'Oct 14, 2024', initials: 'GT', color: '#8B9678' },
-  { name: 'David K.', text: 'Found the perfect barber in Mbarara through Hair Salon. Clean shop, great atmosphere and the haircut was exactly what I wanted.', rating: 5, date: 'Oct 9, 2024', initials: 'DK', color: '#7A6858' },
-  { name: 'Faith N.', text: 'The booking system is so intuitive. I got a same-day appointment at Biharwe Glow Salon and the results were outstanding.', rating: 5, date: 'Sep 30, 2024', initials: 'FN', color: '#6B7A5C' },
+  { name: 'Grace T.', text: 'Absolutely amazing experience! Nalwoga did an incredible job with my highlights. Booking was seamless — will definitely be back.', rating: 5, date: 'Oct 14, 2026', initials: 'GT', color: '#8B9678' },
+  { name: 'David K.', text: 'Found the perfect barber in Mbarara through Hair Salon. Clean shop, great atmosphere and the haircut was exactly what I wanted.', rating: 5, date: 'Oct 9, 2026', initials: 'DK', color: '#7A6858' },
+  { name: 'Faith N.', text: 'The booking system is so intuitive. I got a same-day appointment at Biharwe Glow Salon and the results were outstanding.', rating: 5, date: 'Sep 30, 2026', initials: 'FN', color: '#6B7A5C' },
 ]
 
 // ─── SPLASH ───────────────────────────────────────────────────────────────────
@@ -407,7 +407,7 @@ function LandingPage({ onLogin, onRegister }: { onLogin: () => void; onRegister:
           </div>
         </div>
         <div className="footer-bottom">
-          <div className="container">© 2024 Hair Salon. All rights reserved.</div>
+          <div className="container">© 2026 Hair Salon. All rights reserved.</div>
         </div>
       </footer>
     </div>
